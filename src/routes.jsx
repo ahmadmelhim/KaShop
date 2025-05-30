@@ -6,6 +6,8 @@ import Shop from './pages/shop/Shop';
 import Cart from './pages/cart/Cart';
 import Login from './pages/login/Login';
 import Register from './pages/register/Register';
+import ForgotPassword from './pages/forgotpassword/ForgotPassword';
+import SendCode from './pages/sendcode/SendCode';
 const routes= createBrowserRouter([
     {
         path:'/',
@@ -26,11 +28,19 @@ const routes= createBrowserRouter([
             },
             {
                 path:'/login',
-                element:<Login/>
+                element:<Login />
             },
             {
                 path:'/register',
-                element:<Register/>
+                element:<Register />
+            },
+            {
+                path:'/forgotPassword',
+                element:<ForgotPassword />
+            },
+            {
+                path:'/sendcode',
+                element:<SendCode />
             }
         ]
     }
