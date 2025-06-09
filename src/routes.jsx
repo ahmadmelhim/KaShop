@@ -8,6 +8,7 @@ import Login from './pages/login/Login';
 import Register from './pages/register/Register';
 import ForgotPassword from './pages/forgotpassword/ForgotPassword';
 import SendCode from './pages/sendcode/SendCode';
+import Product from './pages/product/Product';
 const routes= createBrowserRouter([
     {
         path:'/',
@@ -17,6 +18,10 @@ const routes= createBrowserRouter([
             {
                 path:'/',
                 element :<Home />
+            },
+            {
+                path:'/product/:id',
+                element:<Product /> 
             },
             {
                 path:'/shop',

@@ -12,7 +12,8 @@ import axios from 'axios';
 export default function Login() {
   const {register,handleSubmit}=useForm();
   const loginrUser= async (values)=>{
-    const response=await axios.post(`http://mytshop.runasp.net/api/Account/Login`,values)
+    const response=await axios.post(`http://mytshop.runasp.net/api/Account/Login`,values);
+    localStorage.setItem("userToken",response.data.token);
     console.log(response);
   }
   return (
